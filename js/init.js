@@ -1,7 +1,9 @@
 const btn = document.getElementById("lotto-2-button");
+const test_url = window.TEST_URL;
 let tmp = 1, numbers;
 let double_ary = [[],[],[],[],[]];
 let list_index = 0;
+
 
 
 function whatis_date(){
@@ -88,6 +90,7 @@ function getindex(c) {
 
 
 btn.addEventListener("click", function() {
+    console.log("env = ", test_url)
     dead_line_publish();
 
     tmp === 1 && (
